@@ -9,9 +9,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    getRecipes();
-  }, [query]);
+  
 
   const getRecipes = async () => {
     const response = await axios.get(
@@ -20,6 +18,11 @@ function App() {
     setRecipes(response.data.hits);
     console.log(response.data.hits);
   };
+  
+  useEffect(() => {
+    getRecipes();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [query]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
