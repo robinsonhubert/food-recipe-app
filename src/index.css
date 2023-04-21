@@ -3,11 +3,12 @@
 }
 
 header{
-  background-color: #f0b67f;
+  background-color: #043802;
   padding: 20px;
 }
 
 h1{
+  color: aliceblue;
   margin: 0;
 }
 
@@ -27,7 +28,7 @@ h1{
 }
 
 .search-button {
-  background-color: #f0b67f;
+  background-color: #258220;
   color: white;
   border: 1px solid;
   padding: 10px;
@@ -75,8 +76,8 @@ h1{
 
 .recipe-link {
   display: block;
-  background-color: #f0b67f;
-  color: white;
+  background-color: #258220;
+  color: aliceblue;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
